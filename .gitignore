@@ -1,0 +1,32 @@
+# Personal files: Ignore your IDE-specific configuration files, cache directories, and temporary files
+.vscode/
+.idea/
+
+# General files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Local database connections: Ignore sensitive connection strings or configuration files for local databases
+appsettings.Development.json
+
+# Generated Files: These folders contain compiled files and temporary artifacts created during the build process. They are automatically generated based on your source code and configuration, so there's no need to version control them.
+/bin/
+/obj/
+
+# Temporary build outputs
+**/TempBin/
+**/TemporaryCache/
+
+# NuGet packages and third-party libraries: Unless you're contributing directly to these dependencies, ignore the downloaded NuGet packages folder
+packages/
+
+# Test results and logs: Ignore test output files, logs, and reports generated during testing
+**/TestResults/
+**/logs/
+
+# Client-side build outputs: If using Blazor WASM, you might have a client-side build output directory that can be ignore
+wwwroot/dist/
+
+# Temporary browser cache: Ignore caching directories used by the browser while running the Blazor app locally
+wwwroot/_content/DevExpress.Blazor/dist/cache
