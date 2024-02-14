@@ -16,7 +16,7 @@
 </ul>
 
 <input @bind="newTodo" placeholder="add task" />
-<button @onclick="AddTodo">Add todo</button>
+<button class="btn btn-success" @onclick="AddTodo">Add todo</button>
 
 @code {
     private List<TodoItem> todos = new();
