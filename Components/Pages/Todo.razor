@@ -15,8 +15,11 @@
     }
 </ul>
 
-<input @bind="newTodo" placeholder="add task" />
-<button class="btn btn-success" @onclick="AddTodo">Add todo</button>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">?</span>
+  <input type="text" class="form-control" placeholder="Add task" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Todo" @bind="newTodo" >
+  <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" @onclick="AddTodo">Button</button>
+</div>
 
 @code {
     private List<TodoItem> todos = new();
